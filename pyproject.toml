@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "roman-history-bot"
+version = "0.1.0"
+description = "Bot de Telegram sobre historia romana usando MLX"
+authors = ["Diego Frigerio <diegonf84@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+python-telegram-bot = "^21.7"
+python-dotenv = "^1.0.1"
+langchain = {extras = ["community"], version = "^0.3.7"}
+pydantic-settings = "^2.6.1"
+sentencepiece = "0.1.99"
+mlx = "^0.20.0"
+mlx-lm = "^0.19.3"
+protobuf = "3.20.0"
+safetensors = "^0.4.5"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+black = "^24.10.0"
+isort = "^5.13.2"
+flake8 = "^7.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
